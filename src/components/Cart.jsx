@@ -13,7 +13,7 @@ const Cart = (props) => {
     <div className="flex justify-around gap-10">
       <div className="flex flex-col gap-2">
         <img src={image} className=" w-[100px] h-[100px]" alt="" />
-        <h1 className=" text-lg text-gray-500">{title.substring(0, 20)}..</h1>
+        <h1 className=" text-lg text-gray-500">{title.substring(0,20)}..</h1>
         <p className=" text-base text-gray-500">${dynamicPrice.toFixed(2)}</p>
         <p
           onClick={() => {
