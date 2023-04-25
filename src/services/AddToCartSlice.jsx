@@ -44,9 +44,9 @@ export const AddToCartSlice = createSlice({
       state.cartItems = state.cartItems.filter(
         (item) => item.id !== payload.id
       );
-      //   state.Total -= payload.price * payload.quantity;
+        // state.Total -= payload.price * payload.quantity;
       //   state.quantity--;
-      state.Total -=  calcTotal(state.cartItems) 
+      state.Total -=  calcTotal(state.cartItems)
       state.quantity -= calcQty(state.cartItems);
       Cookies.set(STORAGE_KEY, JSON.stringify(state.cartItems));
     },
