@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom';
 
 const AddToCart = () => {
   const { cartItems,Total } = useSelector((state) => state.cart);
-  console.log(cartItems);
+  // console.log(cartItems);
  if(cartItems.length>0){
    return (
      <div>
